@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const mongoUri =
-  "mongodb+srv://parth:parth@cluster0.hnjeawt.mongodb.net/Balance?retryWrites=true&w=majority";
+  process.env.MONGODB_URI;
 
 const MongoDB = async () => {
   await mongoose
